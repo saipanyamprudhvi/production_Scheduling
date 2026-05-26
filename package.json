@@ -1,0 +1,19 @@
+{
+  "name": "prism-production-scheduling",
+  "version": "1.0.0",
+  "description": "Local end-to-end production scheduling optimizer and planner workbench.",
+  "main": "app_server.py",
+  "scripts": {
+    "start": "python app_server.py",
+    "test": "node tests/scheduler.test.js",
+    "test:cpsat": "python tests/cpsat_python_test.py"
+  },
+  "keywords": [
+    "production-scheduling",
+    "optimization",
+    "manufacturing",
+    "planner-workbench"
+  ],
+  "author": "",
+  "license": "MIT"
+}
