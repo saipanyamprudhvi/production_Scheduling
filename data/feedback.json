@@ -1,0 +1,11 @@
+[
+  {
+    "id": "FDB-001",
+    "scenarioId": "SCN-BASE",
+    "jobId": "JOB-1004",
+    "type": "execution",
+    "message": "Thermal family usually runs 8% slower during first shift after maintenance.",
+    "impact": "capacity",
+    "createdAt": "2026-05-24T10:30:00.000Z"
+  }
+]

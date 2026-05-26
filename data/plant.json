@@ -1,0 +1,54 @@
+{
+  "plant": {
+    "id": "PLT-PRISM-01",
+    "name": "PRISM Pilot Plant",
+    "timezone": "Asia/Calcutta",
+    "planningHorizonDays": 7
+  },
+  "lines": [
+    {
+      "id": "LINE-A",
+      "name": "Line A",
+      "dailyCapacityHours": 16,
+      "laborCrews": 2,
+      "supportedFamilies": ["brake", "steering", "chassis"],
+      "changeoverMatrixMinutes": {
+        "brake": { "brake": 15, "steering": 55, "chassis": 45 },
+        "steering": { "brake": 50, "steering": 20, "chassis": 60 },
+        "chassis": { "brake": 45, "steering": 60, "chassis": 15 }
+      }
+    },
+    {
+      "id": "LINE-B",
+      "name": "Line B",
+      "dailyCapacityHours": 14,
+      "laborCrews": 2,
+      "supportedFamilies": ["brake", "thermal"],
+      "changeoverMatrixMinutes": {
+        "brake": { "brake": 10, "thermal": 65 },
+        "thermal": { "brake": 60, "thermal": 15 }
+      }
+    },
+    {
+      "id": "LINE-C",
+      "name": "Line C",
+      "dailyCapacityHours": 12,
+      "laborCrews": 1,
+      "supportedFamilies": ["steering", "chassis", "thermal"],
+      "changeoverMatrixMinutes": {
+        "steering": { "steering": 15, "chassis": 45, "thermal": 55 },
+        "chassis": { "steering": 45, "chassis": 10, "thermal": 50 },
+        "thermal": { "steering": 55, "chassis": 50, "thermal": 15 }
+      }
+    }
+  ],
+  "calendar": [
+    { "date": "2026-05-27", "shiftHours": 16 },
+    { "date": "2026-05-28", "shiftHours": 16 },
+    { "date": "2026-05-29", "shiftHours": 16 },
+    { "date": "2026-05-30", "shiftHours": 10 },
+    { "date": "2026-05-31", "shiftHours": 0 },
+    { "date": "2026-06-01", "shiftHours": 16 },
+    { "date": "2026-06-02", "shiftHours": 16 }
+  ]
+}

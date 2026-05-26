@@ -1,0 +1,177 @@
+[
+  {
+    "id": "SCN-19E65598CE5",
+    "name": "Expedite priority test",
+    "status": "draft",
+    "createdAt": "2026-05-26T17:33:48.133359Z",
+    "solver": "cp-sat",
+    "weights": {
+      "dueDate": 45,
+      "changeover": 25,
+      "utilization": 20,
+      "inventory": 10
+    },
+    "lockedJobs": [],
+    "overrides": {},
+    "notes": "Created from planner workbench."
+  },
+  {
+    "id": "SCN-19E65598995",
+    "name": "Expedite priority test",
+    "status": "draft",
+    "createdAt": "2026-05-26T17:33:47.285974Z",
+    "solver": "cp-sat",
+    "weights": {
+      "dueDate": 45,
+      "changeover": 25,
+      "utilization": 20,
+      "inventory": 10
+    },
+    "lockedJobs": [],
+    "overrides": {},
+    "notes": "Created from planner workbench."
+  },
+  {
+    "id": "SCN-19E65596993",
+    "name": "Expedite priority test",
+    "status": "draft",
+    "createdAt": "2026-05-26T17:33:39.091216Z",
+    "solver": "cp-sat",
+    "weights": {
+      "dueDate": 2,
+      "changeover": 56,
+      "utilization": 3,
+      "inventory": 8
+    },
+    "lockedJobs": [],
+    "overrides": {},
+    "notes": "Created from planner workbench."
+  },
+  {
+    "id": "SCN-19E655968E9",
+    "name": "Expedite priority test",
+    "status": "draft",
+    "createdAt": "2026-05-26T17:33:38.921345Z",
+    "solver": "cp-sat",
+    "weights": {
+      "dueDate": 2,
+      "changeover": 56,
+      "utilization": 3,
+      "inventory": 8
+    },
+    "lockedJobs": [],
+    "overrides": {},
+    "notes": "Created from planner workbench."
+  },
+  {
+    "id": "SCN-19E655967DF",
+    "name": "Expedite priority test",
+    "status": "draft",
+    "createdAt": "2026-05-26T17:33:38.655679Z",
+    "solver": "cp-sat",
+    "weights": {
+      "dueDate": 2,
+      "changeover": 56,
+      "utilization": 3,
+      "inventory": 8
+    },
+    "lockedJobs": [],
+    "overrides": {},
+    "notes": "Created from planner workbench."
+  },
+  {
+    "id": "SCN-19E65595C7C",
+    "name": "Expedite priority test",
+    "status": "draft",
+    "createdAt": "2026-05-26T17:33:35.740646Z",
+    "solver": "cp-sat",
+    "weights": {
+      "dueDate": 2,
+      "changeover": 6,
+      "utilization": 3,
+      "inventory": 8
+    },
+    "lockedJobs": [],
+    "overrides": {},
+    "notes": "Created from planner workbench."
+  },
+  {
+    "id": "SCN-19E65595BD9",
+    "name": "Expedite priority test",
+    "status": "draft",
+    "createdAt": "2026-05-26T17:33:35.577975Z",
+    "solver": "cp-sat",
+    "weights": {
+      "dueDate": 2,
+      "changeover": 6,
+      "utilization": 3,
+      "inventory": 8
+    },
+    "lockedJobs": [],
+    "overrides": {},
+    "notes": "Created from planner workbench."
+  },
+  {
+    "id": "SCN-19E65595AD2",
+    "name": "Expedite priority test",
+    "status": "draft",
+    "createdAt": "2026-05-26T17:33:35.314035Z",
+    "solver": "cp-sat",
+    "weights": {
+      "dueDate": 2,
+      "changeover": 6,
+      "utilization": 3,
+      "inventory": 8
+    },
+    "lockedJobs": [],
+    "overrides": {},
+    "notes": "Created from planner workbench."
+  },
+  {
+    "id": "SCN-19E6559568F",
+    "name": "Expedite priority test",
+    "status": "draft",
+    "createdAt": "2026-05-26T17:33:34.223592Z",
+    "solver": "cp-sat",
+    "weights": {
+      "dueDate": 2,
+      "changeover": 6,
+      "utilization": 3,
+      "inventory": 8
+    },
+    "lockedJobs": [],
+    "overrides": {},
+    "notes": "Created from planner workbench."
+  },
+  {
+    "id": "SCN-19E6559550B",
+    "name": "Expedite priority test",
+    "status": "draft",
+    "createdAt": "2026-05-26T17:33:33.835723Z",
+    "solver": "cp-sat",
+    "weights": {
+      "dueDate": 2,
+      "changeover": 6,
+      "utilization": 3,
+      "inventory": 8
+    },
+    "lockedJobs": [],
+    "overrides": {},
+    "notes": "Created from planner workbench."
+  },
+  {
+    "id": "SCN-BASE",
+    "name": "Baseline Feasible Plan",
+    "status": "approved",
+    "createdAt": "2026-05-26T09:00:00.000Z",
+    "weights": {
+      "dueDate": 45,
+      "changeover": 25,
+      "utilization": 20,
+      "inventory": 10
+    },
+    "lockedJobs": [],
+    "overrides": {},
+    "notes": "Default plan balanced for due dates and changeover reduction."
+  }
+]

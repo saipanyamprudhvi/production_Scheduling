@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PRISM Production Scheduling</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">PRISM Scheduling Optimizer</p>
+        <h1>Production planner workbench</h1>
+      </div>
+      <div class="top-actions">
+        <button id="runScenarioBtn" class="primary">Run scenario</button>
+        <button id="approveScenarioBtn">Approve plan</button>
+        <a id="exportLink" class="button-link" href="/api/scenarios/SCN-BASE/export.csv">Export CSV</a>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar">
+        <section class="panel">
+          <h2>Scenario</h2>
+          <label>
+            Active scenario
+            <select id="scenarioSelect"></select>
+          </label>
+          <label>
+            Scenario name
+            <input id="scenarioName" value="Expedite priority test" />
+          </label>
+          <div class="weights">
+            <label>Due date <input id="weightDue" type="range" min="0" max="80" value="45" /></label>
+            <label>Changeover <input id="weightChangeover" type="range" min="0" max="80" value="25" /></label>
+            <label>Utilization <input id="weightUtilization" type="range" min="0" max="80" value="20" /></label>
+            <label>Inventory <input id="weightInventory" type="range" min="0" max="80" value="10" /></label>
+          </div>
+          <button id="createScenarioBtn" class="wide">Create what-if</button>
+        </section>
+
+        <section class="panel">
+          <h2>Feedback loop</h2>
+          <label>
+            Job
+            <select id="feedbackJob"></select>
+          </label>
+          <label>
+            Impact
+            <select id="feedbackImpact">
+              <option value="capacity">Capacity</option>
+              <option value="changeover">Changeover</option>
+              <option value="priority">Priority</option>
+              <option value="data-quality">Data quality</option>
+            </select>
+          </label>
+          <textarea id="feedbackMessage" rows="4" placeholder="Capture planner edit, shop-floor actual, or data quality issue"></textarea>
+          <button id="submitFeedbackBtn" class="wide">Submit feedback</button>
+        </section>
+      </aside>
+
+      <section class="workspace">
+        <section class="kpi-grid" id="kpiGrid"></section>
+
+        <section class="workbench">
+          <div class="section-header">
+            <div>
+              <h2>Line and day schedule</h2>
+              <p id="generatedAt">Waiting for scenario run</p>
+            </div>
+            <div class="legend">
+              <span><i class="brake"></i>Brake</span>
+              <span><i class="steering"></i>Steering</span>
+              <span><i class="chassis"></i>Chassis</span>
+              <span><i class="thermal"></i>Thermal</span>
+            </div>
+          </div>
+          <div id="scheduleBoard" class="schedule-board"></div>
+        </section>
+
+        <section class="lower-grid">
+          <div class="panel">
+            <h2>Bottlenecks</h2>
+            <div id="bottlenecks"></div>
+          </div>
+          <div class="panel">
+            <h2>Explainability</h2>
+            <div id="explainability"></div>
+          </div>
+          <div class="panel">
+            <h2>Recent feedback</h2>
+            <div id="feedbackList"></div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <div id="toast" class="toast" role="status"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
